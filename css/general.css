@@ -1,0 +1,62 @@
+/* 
+1-----TYPOGRAPHY
+-font weight
+  default= 400
+  medium= 500
+  semi-bold= 600
+  bold= 700
+
+-line heights
+  default= 1
+  small= 0.5
+  medium= 1.2
+  paragraph= 1.6
+  large= 1.8
+
+-letter spacing
+  -0.5px
+  0.75px
+
+2-----COLORS
+  primary= 
+  tints=
+  shades=
+  accents=
+  greys=
+
+3-----SHADOWS
+  box-shadow: 
+
+4-----BORDER RADIUS
+  default=
+  medium=
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem hsla(49, 72%, 50%, 0.9);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/* ********************************************* */
+/* GENERAL REUSABLE COMPONENTS */
+/* ********************************************* */
