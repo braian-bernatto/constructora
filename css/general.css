@@ -18,29 +18,41 @@
   0.75px
 
 2-----COLORS
-  primary= 
-  tints=
-  shades=
+  primary= hsl(51, 94%, 64%) #f9e04d;
+  tints= hsl(51, 94%, 40%) #c6a906
+  shades= 
   accents=
-  greys=
+  greys= #555 #ced4da
 
-3-----SHADOWS
-  box-shadow: 
+  Gradientes: 
+   background-image: linear-gradient(
+    to right,
+    hsla(49, 72%, 50%, 0.9),
+    hsla(49, 72%, 30%, 0.9)
+  )
+  
+  3-----SHADOWS
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 4-----BORDER RADIUS
-  default=
-  medium=
+default=  0.2rem
+medium= 0.4rem
 */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #555;
 }
 
 *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem hsla(49, 72%, 50%, 0.9);
+}
+
+ul {
+  list-style: none;
 }
 
 html {
@@ -53,10 +65,184 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
   overflow-x: hidden;
+}
+
+/* ********************************************* */
+/* REMOVE ARROWS AND SPINNERS FROM INPUTS */
+/* ********************************************* */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 /* ********************************************* */
 /* GENERAL REUSABLE COMPONENTS */
 /* ********************************************* */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-terciary {
+  position: relative;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  line-height: 1.05;
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  line-height: 1.2;
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.heading-terciary {
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn {
+  background-color: hsl(51, 94%, 64%);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #4b4316;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.highlight {
+  text-decoration: underline hsl(51, 94%, 40%);
+}
+
+.wave {
+  display: block;
+  position: relative;
+  /* top: -100px; */
+  z-index: -999;
+}
+
+.dots::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 130px;
+  bottom: -130px;
+  left: 20%;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='hsla(51, 94%, 40%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-22,-29)' fill='url(%23a)'/></svg>");
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.card {
+  position: relative;
+  font-size: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-top: 8rem;
+  overflow: hidden;
+  width: 200px;
+  height: 250px;
+}
+
+.card input {
+  display: none;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card label {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+.card input:checked + label {
+  box-shadow: inset 0 0 0 5px hsl(51, 94%, 40%);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.check-icon {
+  width: 24px;
+  stroke: hsl(51, 94%, 40%);
+  margin-right: 5px;
+}
+
+.unavailable .check-icon {
+  stroke: #999;
+}
+
+.unavailable {
+  text-decoration: line-through #555555ab;
+  color: #999;
+}
+
+.primary-btn {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+    to right,
+    hsla(49, 72%, 50%, 0.9),
+    hsla(49, 72%, 30%, 0.9)
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-position: right;
+}
