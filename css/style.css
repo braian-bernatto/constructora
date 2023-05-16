@@ -111,9 +111,9 @@
 }
 
 /* ********************************************* */
-/* HOW */
+/* SERVICES */
 /* ********************************************* */
-.how {
+.services {
   background-color: #ced4da;
   height: 800px;
 }
@@ -125,8 +125,9 @@
 }
 
 .items-description {
+  max-width: 400px;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.8;
 }
 
@@ -135,9 +136,11 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  justify-content: center;
+  gap: 3.2rem;
   background-color: white;
-  width: 300px;
+  width: 350px;
+  height: 400px;
   padding: 2rem;
   border-radius: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -149,6 +152,13 @@
   width: 100%;
 }
 
-.how .btn {
-  margin: 0 auto;
+.services .btn {
+  align-self: center;
+  max-width: 400px;
+  margin-top: 6.4rem;
+}
+
+.services .container {
+  display: flex;
+  flex-direction: column;
 }
