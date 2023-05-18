@@ -22,7 +22,7 @@
   tints= hsl(51, 94%, 40%) #c6a906
   shades= 
   accents=
-  greys= #555 #ced4da
+  greys= #555 #ced4da #e9ecef
 
   Gradientes: 
    background-image: linear-gradient(
@@ -90,6 +90,11 @@ input[type='number'] {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
 }
 
 .heading-primary,
