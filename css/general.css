@@ -18,8 +18,8 @@
   0.75px
 
 2-----COLORS
-  primary= hsl(51, 94%, 64%) #f9e04d;
-  tints= hsl(51, 94%, 40%) #c6a906
+  primary= var(--yellow) #f9e04d;
+  tints= var(--yellow-darken)) #c6a96
   shades= 
   accents=
   greys= #555 #ced4da #e9ecef
@@ -39,11 +39,21 @@ default=  0.2rem
 medium= 0.4rem
 */
 
+:root {
+  --yellow: hsl(51, 94%, 64%);
+  --yellow-darken: hsl(51, 94%, 40%);
+  --gray: #555;
+  --gray-medium: #999;
+  --gray-light: hsl(210, 14%, 83%);
+  --gray-light-2: hsl(210, 14%, 97%);
+  --gray-darken: #333;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #555;
+  color: var(--gray);
 }
 
 *:focus {
@@ -130,10 +140,11 @@ input[type='number'] {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+  color: var(--yellow-darken);
 }
 
 .highlight {
-  text-decoration: underline hsl(51, 94%, 40%);
+  text-decoration: underline var(--yellow-darken);
 }
 
 .wave {
@@ -141,6 +152,7 @@ input[type='number'] {
   position: relative;
   /* top: -100px; */
   z-index: -999;
+  user-select: none;
 }
 
 .dots::after {
@@ -212,7 +224,7 @@ input[type='number'] {
 }
 
 .card input:checked + label {
-  box-shadow: inset 0 0 0 5px hsl(51, 94%, 40%);
+  box-shadow: inset 0 0 0 5px var(--yellow-darken);
 }
 
 .card:hover {
@@ -221,24 +233,24 @@ input[type='number'] {
 
 .check-icon {
   width: 24px;
-  stroke: hsl(51, 94%, 40%);
+  stroke: var(--yellow-darken);
   margin-right: 5px;
 }
 
 .unavailable .check-icon {
-  stroke: #999;
+  stroke: var(--gray-medium);
 }
 
 .unavailable {
   text-decoration: line-through #555555ab;
-  color: #999;
+  color: var(--gray-medium);
 }
 
 .btn {
-  background-color: hsl(51, 94%, 64%);
+  background-color: var(--yellow);
   border: none;
   border-radius: 0.2rem;
-  padding: 1rem 2rem;
+  padding: 1.7rem 2rem;
   font-size: 2rem;
   text-transform: uppercase;
   color: #4b4316;
