@@ -41,6 +41,10 @@
     max-width: 500px;
   }
 
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
   .items-container {
     grid-template-columns: 1fr;
   }
@@ -70,7 +74,49 @@
 /* BELOW 544px (Smartphones) */
 /* ********************************************* */
 @media (max-width: 34em) {
+  .cards {
+    gap: 2.4rem;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-top: 8rem;
+    overflow: hidden;
+    width: 180px;
+    height: 200px;
+  }
+
+  .items-list {
+    height: 350px;
+  }
+
   .contact-form {
     width: 400px;
+  }
+}
+
+/* ********************************************* */
+/* BELOW 420px (Smartphones) */
+/* ********************************************* */
+@media (max-width: 29em) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .items-list {
+    padding: 1rem;
+    width: 260px;
+    height: 320px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input {
+    width: 100%;
   }
 }
