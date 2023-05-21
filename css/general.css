@@ -149,10 +149,19 @@ input[type='number'] {
 
 .wave {
   display: block;
-  height: 50px;
+  position: relative;
+  width: 100%;
   /* top: -100px; */
   z-index: -999;
   user-select: none;
+}
+
+.wave:first-of-type {
+  top: 1px;
+}
+
+.wave:last-of-type {
+  top: -1px;
 }
 
 .dots::after {
