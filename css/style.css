@@ -116,6 +116,7 @@
 
 .bancos {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   gap: 4rem;
@@ -125,8 +126,9 @@
   border: 3px solid var(--yellow-darken);
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 15rem;
   transition: all 0.3s ease;
+  width: 15rem;
+  height: 12rem;
 }
 
 .bancos li:hover {

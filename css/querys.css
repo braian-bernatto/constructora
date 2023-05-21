@@ -89,6 +89,11 @@
     height: 200px;
   }
 
+  .bancos {
+    justify-content: center;
+    gap: 1rem;
+  }
+
   .items-list {
     height: 350px;
   }
