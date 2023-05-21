@@ -1,0 +1,76 @@
+/* ********************************************* */
+/* BELOW 1240px (Landscape Tablets) */
+/* ********************************************* */
+@media (max-width: 78em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    padding: 9.6rem 2rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-terciary {
+    font-size: 2.4rem;
+  }
+}
+
+/* ********************************************* */
+/* BELOW 860px (Tablets) */
+/* ********************************************* */
+@media (max-width: 53em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary,
+  .heading-secondary,
+  .heading-terciary {
+    max-width: 500px;
+  }
+
+  .items-container {
+    grid-template-columns: 1fr;
+  }
+
+  .items-list {
+    justify-self: center;
+    max-width: 290px;
+  }
+
+  .services .btn {
+    margin-top: 15rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+    align-items: center;
+  }
+
+  .contact-box {
+    border-top: 1px solid var(--gray-light);
+    padding-top: 4rem;
+  }
+}
+
+/* ********************************************* */
+/* BELOW 544px (Smartphones) */
+/* ********************************************* */
+@media (max-width: 34em) {
+  .contact-form {
+    width: 400px;
+  }
+}

@@ -1,8 +1,4 @@
 /* ********************************************* */
-/* HEADER */
-/* ********************************************* */
-
-/* ********************************************* */
 /* HERO */
 /* ********************************************* */
 .hero {
@@ -129,7 +125,7 @@
   border: 3px solid var(--yellow-darken);
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 150px;
+  width: 15rem;
   transition: all 0.3s ease;
 }
 
@@ -205,7 +201,7 @@
 .services .btn {
   align-self: center;
   max-width: 400px;
-  margin-top: 6.4rem;
+  margin-top: 12rem;
 }
 
 .services .container {
