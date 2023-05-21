@@ -148,10 +148,8 @@ input[type='number'] {
 }
 
 .wave {
-  display: block;
-  position: relative;
+  display: flex;
   width: 100%;
-  /* top: -100px; */
   z-index: -999;
   user-select: none;
 }
