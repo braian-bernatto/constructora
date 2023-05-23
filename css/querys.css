@@ -74,6 +74,10 @@
 /* BELOW 544px (Smartphones) */
 /* ********************************************* */
 @media (max-width: 34em) {
+  .house {
+    transform: scale(0.8);
+  }
+
   .cards {
     gap: 2.4rem;
   }
@@ -107,6 +111,10 @@
 /* BELOW 420px (Smartphones) */
 /* ********************************************* */
 @media (max-width: 29em) {
+  .house {
+    transform: scale(0.7);
+  }
+
   .cards {
     flex-direction: column;
   }
