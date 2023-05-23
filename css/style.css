@@ -147,13 +147,20 @@
 
 .side {
   position: absolute;
-  bottom: 0;
-  left: -95px;
+  bottom: -5px;
   width: 100px;
   height: 100px;
   background-color: var(--gray-light-2);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   opacity: 0;
+}
+
+.side_left {
+  left: -92px;
+}
+
+.side_right {
+  right: -92px;
 }
 
 .house-m.house-b .side {
