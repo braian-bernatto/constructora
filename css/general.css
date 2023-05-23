@@ -45,7 +45,7 @@ medium= 0.4rem
   --gray: #555;
   --gray-medium: #999;
   --gray-light: hsl(210, 14%, 83%);
-  --gray-light-2: hsl(210, 14%, 97%);
+  --gray-light-2: hsl(0, 0%, 95%);
   --gray-darken: #333;
 }
 
