@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
       house.classList.add('house-b')
     } else if (e.target.value > 69) {
       house.classList.add('house-m')
+      house.classList.remove('house-b')
     } else {
       house.classList.remove('house-m')
       house.classList.remove('house-b')
