@@ -10,6 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   year.innerHTML = new Date().getFullYear()
 
+  calculatorInput.addEventListener('click', e => e.currentTarget.select())
+
   calculatorInput.addEventListener('keyup', e => {
     calculatorInput.value = e.target.value.replace(/[^0-9]/g, '')
     if (e.target.value > 99) {
