@@ -24,21 +24,27 @@
         la casa de tus sueños!
       </h1>
       <div class="calculator-container">
-        <div class="house">
-          <div class="roof"></div>
-          <div class="window window_left"></div>
-          <div class="window window_right"></div>
-          <div class="front"></div>
-          <div class="side side_left">
-            <div class="window"></div>
+        <span class="house-container">
+          <div class="house">
+            <div class="roof"></div>
+            <div class="window window_left"></div>
+            <div class="window window_right"></div>
+            <div class="front"></div>
+            <div class="side side_left">
+              <div class="window"></div>
+            </div>
+            <div class="side side_right">
+              <div class="window"></div>
+            </div>
+            <div class="calculator-meters">
+              <input
+                class="calculator-input"
+                type="number"
+                inputmode="numeric"
+              />
+            </div>
           </div>
-          <div class="side side_right">
-            <div class="window"></div>
-          </div>
-          <div class="calculator-meters">
-            <input class="calculator-input" type="number" />
-          </div>
-        </div>
+        </span>
         <div class="cards">
           <span class="card">
             <input type="radio" name="house-type" id="basic" checked />
@@ -405,8 +411,9 @@
   </body>
   <footer class="footer">
     <div class="container">
-      Copyright &copy; <span class="year">2023</span>
-      <a href="#"> Bernatto Inc.</a>
+      Copyright &copy; <span class="year"></span>&nbsp;&nbsp;&nbsp;<a href="#"
+        >Bernatto Inc.</a
+      >
     </div>
   </footer>
 </html>

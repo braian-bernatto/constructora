@@ -1,13 +1,17 @@
-window.addEventListener('DOMContentLoaded', e => {
+window.addEventListener('DOMContentLoaded', () => {
+  const year = document.querySelector('.year')
   const house = document.querySelector('.house')
   const calculatorInput = document.querySelector('.calculator-input')
   const amount = document.querySelector('.amount')
   const houseTypeButtons = document.querySelectorAll('input[name="house-type"]')
   let houseType = 'basic'
-  const basicAmountPrice = 35000
-  const premiumAmountPrice = 50000
+  const basicAmountPrice = 2500000
+  const premiumAmountPrice = 5000000
+
+  year.innerHTML = new Date().getFullYear()
 
   calculatorInput.addEventListener('keyup', e => {
+    calculatorInput.value = e.target.value.replace(/[^0-9]/g, '')
     if (e.target.value > 99) {
       house.classList.add('house-m')
       house.classList.add('house-b')
